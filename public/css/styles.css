@@ -1,0 +1,332 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #EAC926;
+}
+
+.top-header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2%;
+}
+
+.logo {
+    width: 50%;
+    padding: 10px;
+} 
+
+.buscador{
+    width: 50%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 5%;
+}
+
+header p {
+    text-align: center;
+}
+
+header nav {
+    display: none;
+}
+
+header nav ul li a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+}
+
+header nav ul li {
+    list-style-type: none;
+}
+
+header nav ul {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 22%;
+}
+
+header .buscador .input {
+    background-color: #FFF;
+    border: 1px solid #666;
+    color: #666;
+}
+
+header .buscador .lupa i {
+    background-color: #FFF;
+    border: 1px solid #666;
+    color: #666;
+    height: 20px;
+    margin: 4px;
+}
+
+header div.burger-menu i {
+    color: #FFF;
+    background-color: #1259c3;
+    font-size:  20px;
+    padding: 10px;
+    margin: 10px 0px 20px 0px;
+    border-radius: 5px;
+}
+
+header div.burger-menu {
+    text-align: center;
+}
+
+header {
+    width: 100vw;
+}
+
+.banner-img {
+    width: 100vw;
+}
+
+main section h3 {
+    margin: 20px;
+    font-size: 24px;
+    color: #666;
+}
+
+main section p {
+    font-size: 18px;
+}
+
+main section h4 {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+main {
+    margin: 0 auto;
+    width: 90vw;
+}
+
+main section article {
+    margin-bottom: 10px;
+    transition: all 0.5s;
+}
+
+main section article img  {
+    width: 100%;
+}
+
+.info-article{
+    border-top: solid 1px #ebebeb;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.precio {
+    width: 30%;
+}
+
+.size {
+    font-size: 16px;
+    width: 70%;
+    color: #39b54a;
+}
+
+main section article div i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: all 0.5s;
+    color: #39b54a;
+}
+
+.desc-prod {
+    display: none;
+    transition: all 0.5s;
+}
+
+#formulario-registro {
+    display: flex;
+    justify-content: center;
+    background-color: #ebebeb;
+}
+
+.formularios {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+form div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 15%;
+    width: 100%;
+}
+
+.text-field {
+    padding: 10px;
+}
+
+.seccion {
+    margin: 10px;
+}
+
+.selecciones {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.selecciones div {
+    text-align: center;
+}
+
+.fotoP {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.botonForm {
+    width: 22%;
+}
+
+.botones {
+    border-radius: 5%;
+    padding: 5px;
+}
+
+.botonSubmit {
+    background-color: #1259c3;
+    color: #FFF;
+    margin: 5px;
+}
+
+.botonReset {
+    background-color: #1259c3;
+    color: #FFF;
+    margin: 5px;
+}
+
+#formulario-login {
+    display: flex;
+    justify-content: center;
+    background-color: #ebebeb;
+    width: 100%;
+}
+
+.botonLog {
+    background-color: #1259c3;
+    color: #FFF;
+    padding: 10px;
+    width: 185px;
+}
+
+footer section p i {
+    color:  #1259c3;
+    background-color:#FFF;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 7vh;
+}
+
+footer section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+footer section div {
+    margin: 10px;
+}
+
+.copy {
+    font-size: 12px;
+    margin: 20px;
+}
+
+@media (min-width: 361px) {
+    .productos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .desc-prod {
+        display: block;
+    }
+    main section article{
+        width: 45%;
+    }
+    header nav {
+        display: flex;
+        justify-content: space-around;
+    }
+    header div.burger-menu {
+        display: none;
+    }
+    footer section  {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin: 10px;
+    }
+    footer section div {
+        margin: 10px;
+    }
+    .precio {
+        margin-right: 40px;
+    }
+    .size {
+        width: 40%;
+    }
+}
+
+@media (min-width: 769px) {
+    main section article{
+        width: 22.5%;
+    }
+    desc-prod {
+        display: none;
+    }
+    .imgLogo {
+        width: 50%;
+    }
+    article:hover .desc-prod {
+        display: block;
+    }
+    article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    article:hover i {
+        transform: rotate(-90deg);
+    }
+    .buscador {
+        width: auto;
+    }
+    .top-header {
+        display: flex;
+        align-items: center;
+    }
+
+}
