@@ -15,6 +15,7 @@ header {
 .top-header {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding: 2%;
 }
 
@@ -165,6 +166,7 @@ main section article div i {
     display: flex;
     justify-content: center;
     background-color: #ebebeb;
+    width: 100%;
 }
 
 .formularios {
@@ -209,10 +211,14 @@ form div {
 
 .botonForm {
     width: 22%;
+    border-radius: 5%;
+}
+
+.botonForm:hover {
+    background-color: #0022AA;
 }
 
 .botones {
-    border-radius: 5%;
     padding: 5px;
 }
 
@@ -220,12 +226,15 @@ form div {
     background-color: #1259c3;
     color: #FFF;
     margin: 5px;
+    border: none;
+    padding: 10px;
 }
 
 .botonReset {
     background-color: #1259c3;
     color: #FFF;
     margin: 5px;
+    border: none;
 }
 
 #formulario-login {
@@ -233,13 +242,22 @@ form div {
     justify-content: center;
     background-color: #ebebeb;
     width: 100%;
+    margin-bottom: 19vh;
 }
+
 
 .botonLog {
     background-color: #1259c3;
     color: #FFF;
     padding: 10px;
-    width: 185px;
+    border: none;
+    border-radius: 4%;
+    width: 100%;
+}
+
+.botonLog:hover {
+    background-color: #0022AA;
+    transition: all 0.5s;
 }
 
 footer section p i {
@@ -306,9 +324,6 @@ footer section div {
     main section article{
         width: 22.5%;
     }
-    desc-prod {
-        display: none;
-    }
     .imgLogo {
         width: 50%;
     }
@@ -328,5 +343,10 @@ footer section div {
         display: flex;
         align-items: center;
     }
-
+    .desc-prod {
+        display: none;
+    }
+    .desc-prod:hover {
+        display: block;
+    }
 }
